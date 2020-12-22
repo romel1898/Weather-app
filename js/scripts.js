@@ -30,27 +30,6 @@ $(document).ready(function(){
                
             }
         });
-        $.ajax({
-            url: url,
-            type:'GET',
-            dataType: 'json',
-            success: function(info){
-               let icon=document.getElementById("imagen");
-               icon.src=`icons/${info.weather[0].icon}.png`;
-               console.log(info);
-               
-               $('#city-name').html(info.name);
-               $('#description').html(info.weather[0].description);
-               $('#temp').html(parseInt(info.main.temp )+ "c");
-               $('#wind').html(" Wind "+ parseInt(info.wind.speed)+ " km/h ");
-               $('#max-temp').html( parseInt(info.main.temp_max));
-               $('#min-temp').html( parseInt(info.main.temp_min));
-
-          
-               
-            }
-        });
-        
     
     }); 
 
