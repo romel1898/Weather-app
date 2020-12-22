@@ -89,5 +89,6 @@ content: " \f175 ";
 @media (max-width: 600px) {
    .weather-card{
     width:100%;
+     border:1px solid red;
   }
 }
