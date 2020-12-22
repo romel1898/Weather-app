@@ -86,3 +86,8 @@ content: " \f175 ";
  font-size: 15px;
  padding:5px;
 }
+@media (max-width: 600px) {
+   .weather-card{
+    width:100%;
+  }
+}
